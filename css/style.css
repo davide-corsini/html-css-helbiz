@@ -86,6 +86,29 @@ ul.navbar-languages a {
 
 
 
+.fake-jumbo{
+    height: 380px;
+    width: 100%;
+    background-image: url('../img/index-banner.1f6fd0a.jpg');
+    background-size: cover;
+}
+
+
+#mobility {
+    background-image: url('../img/scooter.f0a0397.jpg');
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+}
+
+#family {
+    background-image: url('https://images.vanityfair.it/wp-content/uploads/2018/12/19185347/HELBIZ_L.jpg');
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+}
+
+
 /* media screen */
 @media screen and (max-width: 992px){
     .jumbo h1 {
