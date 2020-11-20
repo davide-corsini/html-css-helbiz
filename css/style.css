@@ -5,6 +5,22 @@ body {
 
 
 
+.pluto, .pippo{
+    border: 1px solid black;
+    height: 500px;
+    padding-top: 40px;
+
+
+}
+
+
+.pippo{
+    width: 50%;
+    
+}
+
+
+
 .header-top {
     height: 80px;
     line-height: 80px;
@@ -85,11 +101,20 @@ ul.navbar-languages a {
     border: 1px solid black;
 }
 
+#how{
+    margin-bottom: 100px;
+}
+
+.pluto h2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 
 
 .fake-jumbo{
-    height: 380px;
+    height: 340px;
     width: 100%;
     background-image: url('../img/index-banner.1f6fd0a.jpg');
     background-size: cover;
