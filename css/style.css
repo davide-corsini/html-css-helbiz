@@ -76,3 +76,19 @@ ul.navbar-languages a {
     font-weight: 300;
 }
   
+/* background colors */
+#products .row [class*="col-"]{
+    background-color: #d3ddde;
+    padding: 30px;
+    line-height: 2;
+}
+
+
+
+
+/* media screen */
+@media screen and (max-width: 992px){
+    .jumbo h1 {
+      font-size: 26px;
+    }
+  }
