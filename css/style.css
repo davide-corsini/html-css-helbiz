@@ -77,10 +77,12 @@ ul.navbar-languages a {
 }
   
 /* background colors */
-#products .row [class*="col-"]{
-    background-color: #d3ddde;
+#products .row .row {
+    background-color: #fafafa;
     padding: 30px;
+    margin: 15px;
     line-height: 2;
+    border: 1px solid black;
 }
 
 
