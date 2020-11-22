@@ -3,31 +3,18 @@ body {
     font-size:15px;
   }
 
-
-
-.pluto, .pippo{
-    border: 1px solid black;
-    height: 500px;
-    padding-top: 40px;
-
-
+main section,
+footer {
+    margin-top: 2%;
 }
 
-
-.pippo{
-    width: 50%;
-    
+#mobility a, #app a {
+    color: white;
 }
-
-
-
+/* start header top */
 .header-top {
     height: 80px;
     line-height: 80px;
-    /* delete */
-    background-color: white;
-    border: 1px solid black;
-    /* delete */
 }
 
 a {
@@ -49,7 +36,7 @@ ul.navbar-languages li a {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 0.9rem;
-  
+
 }
 
 header .header-top .img-logo{
@@ -63,7 +50,6 @@ ul.navbar-languages a {
 
 
 /* start jumbotron layout */
-
 .jumbotron{
     width: 100%;
     height: 480px;
@@ -81,37 +67,56 @@ ul.navbar-languages a {
 
 }
 
-
 .jumbo-text h1 {
     font-size: 42px;
 }
-  
+
 .jumbo-text p {
     margin: 10px 0;
     font-size: 1.3rem;
     font-weight: 300;
 }
-  
-/* background colors */
+/* /end jumbotron */
+
+
+
+/* start products */
 #products .row .row {
-    background-color: #fafafa;
-    padding: 30px;
-    margin: 15px;
     line-height: 2;
-    border: 1px solid black;
 }
 
+#products .row .row [class*="col-"]{
+    background-color: #fafafa;
+}
+
+
+/* /end section #products */
+
+/* start section #how */
 #how{
     margin-bottom: 100px;
 }
 
-.pluto h2{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.equal, .equal img{
+    height: 500px;
+    padding-top: 40px;
 }
 
 
+.equal .content-text-how{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.equal .content-text-steps{
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    font-size: 1.5rem;
+
+}
 
 .fake-jumbo{
     height: 340px;
@@ -119,37 +124,150 @@ ul.navbar-languages a {
     background-image: url('../img/index-banner.1f6fd0a.jpg');
     background-size: cover;
 }
+/* /end section #how */
 
-
-#mobility {
+/* start section #mobility */
+#mobility .container{
     background-image: url('../img/scooter.f0a0397.jpg');
     background-size: cover;
     height: 380px;
     width: 100%;
+    color: white;
 }
 
-#family {
-    background-image: url('https://images.vanityfair.it/wp-content/uploads/2018/12/19185347/HELBIZ_L.jpg');
+.text-mobility{
+    text-align: center;
+    margin: 10% 25%;
+    height: 80%;
+    width: 50%;
+    font-size: 1.5rem;
+}
+/* /end section #mobility */
+
+
+/* ---------- */
+/* #app LAYOUT */
+
+#app .get-the-app{
+    width: 98%;
+    margin-right: 2%;
+    background: linear-gradient(to top, #3f5367, #354554, #2d3a46);
+
+}
+
+#app .find-us{
+    width: 98%;
+    margin-left: 2%;
+    background-image: url('../img/city.7c8c928.jpg');
+    background-position: center;
     background-size: cover;
-    height: 380px;
+    background-repeat: no-repeat;
+}
+
+#app .text-app{
+    padding: 10%;
+    height: 680px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    color: white;
+}
+
+#app .maps-iphone{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/iphone-bg.2dae1bd.png');
+}
+
+#app a{
+    font-size: 1.2rem;
+}
+/* ----------- */
+/* / end app section */
+/* ----------- */
+
+
+/* ----------- */
+/* start #family section */
+/* ----------- */
+
+#family .row {
+    background-image: url('../img/family.bci.jpeg');
+    background-size: cover;
+    height: 400px;
     width: 100%;
 }
 
+.thanks{
+    text-align: center;
+    padding: 10%;
+    background-color: white;
+    height: 240px;
+    width: 100%;
+    margin: 20% 0;
+    font-size: 1.9rem;
+}
+
+#family ul li {
+    display: inline-block;
+    line-height: 120px;
+    font-size: 2.9rem;
+    padding: 4%;
+}
+
+/* start footer */
+  footer{
+    /* height: 500px; */
+    background-color: #000000;
+    color: #fafafa;
+    padding: 5%;
+}
+#info h4{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 600;
+}
+#info ul li{
+    line-height: 1.9;
+    font-size: 0.7rem;
+}
+#social{
+    height: 40px;
+    line-height: 40px;;
+}
+#social, #smartphone{
+    margin-top: 2%;
+}
+
+#info{
+    margin-bottom: 2%;
+}
+
+footer #social ul.social-menu-footer li{
+    display: inline-block;
+    padding-right: 6%;
+    font-size: 1.3rem;
+}
+
+img.smart{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+/* /end footer */
 
 /* media screen */
-@media screen and (max-width: 992px){
+  @media screen and (max-width: 992px){
     .jumbo h1 {
       font-size: 26px;
     }
-  }
-
-
-
-
-
-
-  footer{
-    height: 400px;
-    background-color: #000000;
-      
   }

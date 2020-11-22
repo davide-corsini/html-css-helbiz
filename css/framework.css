@@ -23,14 +23,39 @@
   padding: 5px;
 }
 
-
+/* ADD WARINING DAVIDE */
 /* position relative */
 .relative {
   position: relative;
 }
-/* position relative */
 
+/* width 50-100% */
+.width-50{
+  width: 50%;
+}
 
+.width-100{
+  width: 100%;
+}
+
+/* padding */
+.pd-r-x100{
+  padding-right: 0.4%;
+}
+
+.pd-r-x2{
+  padding-right: 2%;
+}
+
+.pd-l-x2{
+  padding-left: 2%;
+}
+
+/* border */
+.bd-1{
+  border: 1px solid black;
+}
+/* ADD WARNING DAVIDE */
 
 /* framework */
 
