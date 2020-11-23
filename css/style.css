@@ -11,6 +11,10 @@ footer {
 #mobility a, #app a {
     color: white;
 }
+
+/* --------------------- */
+/* START HEADER */
+/* -------------------- */
 /* start header top */
 .header-top {
     height: 80px;
@@ -47,7 +51,7 @@ ul.navbar-languages a {
     border-right: 2px solid black;
     padding-right: 5px;
 }
-
+/* /end header-top */
 
 /* start jumbotron layout */
 .jumbotron{
@@ -77,24 +81,33 @@ ul.navbar-languages a {
     font-weight: 300;
 }
 /* /end jumbotron */
+/* -------------------- */
+/* /END HEADER */
+/* -------------------- */
 
-
-
+/* -------------------------- */
+/* START MAIN */
+/* ------------------------- */
 /* start products */
 #products .row .row {
     line-height: 2;
 }
 
-#products .row .row [class*="col-"]{
+#products .row .row [class*="col-"] {
     background-color: #fafafa;
 }
 
-
+#products a {
+    color: blue;
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
 /* /end section #products */
 
 /* start section #how */
-#how{
-    margin-bottom: 100px;
+#how {
+    margin-bottom: 10%;
 }
 
 .equal, .equal img{
@@ -107,7 +120,11 @@ ul.navbar-languages a {
     position: absolute;
     bottom: 5%;
     left: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+.content-text-how a{
+    color: black;
+
 }
 
 .equal .content-text-steps{
@@ -141,6 +158,12 @@ ul.navbar-languages a {
     height: 80%;
     width: 50%;
     font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.text-mobility p{
+    font-size: 1rem;
+    font-weight: 300;
 }
 /* /end section #mobility */
 
@@ -210,26 +233,53 @@ ul.navbar-languages a {
     text-align: center;
     padding: 10%;
     background-color: white;
-    height: 240px;
+    height: 180px;
     width: 100%;
-    margin: 20% 0;
-    font-size: 1.9rem;
+    margin: 17.5% 0;
+    font-size: 1.5rem;
 }
 
 #family ul li {
     display: inline-block;
-    line-height: 120px;
-    font-size: 2.9rem;
+    line-height: 50%;
+    font-size: 2.0rem;
     padding: 4%;
 }
 
-/* start footer */
+#family i#facebook{
+    color: #1877f2;
+}
+
+#family i#instagram{
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    background: linear-gradient(to top left, #2479d3, #734cc9,  #f312ac, #ff2e3f, #f8d24b, #ff3a3a);
+}
+#family i#youtube {
+    color: #ff0000;
+}
+#family i#twitter{
+    color: #50abf1;
+}
+
+/* ---------------------- */
+/* END MAIN */
+/* ------------------------ */
+
+
+/* ---------------------- */
+/* START FOOTER*/
+/* ------------------------ */
   footer{
-    /* height: 500px; */
     background-color: #000000;
     color: #fafafa;
     padding: 5%;
 }
+#info h4#big-logo{
+    font-size: 1.5rem;
+}
+
 #info h4{
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -237,7 +287,7 @@ ul.navbar-languages a {
     font-weight: 600;
 }
 #info ul li{
-    line-height: 1.9;
+    line-height: 2.6;
     font-size: 0.7rem;
 }
 #social{
@@ -262,12 +312,132 @@ img.smart{
     border: 1px solid white;
     border-radius: 8px;
 }
+/* -------------------- */
+/* /END FOOTER */
+/* ---------------------- */
 
-/* /end footer */
-
-/* media screen */
+/* START MEDIA SCREEEN TABLET */
   @media screen and (max-width: 992px){
-    .jumbo h1 {
+    .jumbotron h1 {
       font-size: 26px;
     }
+
+    .equal img{
+        height: 390px;
+    }
+    #how .equal{
+        float: right;
+    }
+    #how h2{
+        font-size: 1.2rem;
+    }
+
+    #mobility .container,
+    #app .container {
+        width: 90%;
+    }
+    
+    .text-mobility{
+        font-size: 1rem;
+    }
+
+    #app .text-app{
+        font-size: 1.2rem;
+        line-height: 1.6;
+        height: 400px;
+    }
+
+    #app .maps-iphone{
+        height: 40%;
+    }
+
+
+
+    ul.social-menu-footer{
+        text-align: center;
+    }
   }
+/* ---------------------------- */
+/* /END MEDIA SCREEN TABLET */
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+/* /START MEDIA SCREEN SMARTPHONE/ */
+/* ------------------------------ */
+  @media screen and (max-width:768px){
+    #products .row .row [class*="col-"] {
+        background:linear-gradient(to top,  beige, #afadab, #fafafa);
+        border-radius: 5px;
+        margin: 5% 25%;
+        width: 50%;
+    }
+    #products .container .row .row {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #products .container .row {
+        margin: 0;
+    }
+   
+    #how .equal, .equal img{
+        height: 300px;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #how .fake-jumbo {
+        background-position: left;
+        height: 300px;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    #mobility .container{
+        background-position: 50% 100%;
+    }
+    #mobility .text-mobility a{
+        font-size: 1.6rem;
+    }
+    #mobility .container{
+        height: 300px;
+        width: 50%;
+    }
+    #app .get-the-app {
+       width: 100%;
+    }
+    
+    #app .maps-iphone {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    .get-the-app, .find-us {
+        height: 400px;
+    }
+
+    #family .row {
+        height: 250px;
+    }
+
+    .small-text {
+        padding: 1%;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .play-store{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* ---------------------- */
+/* /START MEDIA SCREEN SMARTPHONE/ */
+/* ----------------------- */
